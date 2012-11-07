@@ -1,7 +1,14 @@
 Store::Application.routes.draw do
-  get "staticpages/home"
+  get "staticpages/empresa"
 
-  get "staticpages/help"
+  get "staticpages/contacto"
+
+  get "staticpages/sugerencias"
+
+  get "staticpages/terms"
+
+  get "staticpages/home"
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -2,6 +2,15 @@ class StaticpagesController < ApplicationController
   def home
   end
 
-  def help
+  def empresa
+  end
+
+  def contacto
+  end
+
+  def sugerencias
+  end
+
+  def terms
   end
 end
