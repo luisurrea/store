@@ -2,8 +2,8 @@ Store::Application.routes.draw do
   root to: 'staticpages#home'
   
   match '/empresa', to: 'staticpages#empresa'
-  match '/contacto', to: 'staticpages#contacto'
-  match '/sugerencias', to: 'staticpages#sugerencias'
+  #match '/contacto', to: 'staticpages#contacto'
+  #match '/sugerencias', to: 'staticpages#sugerencias'
   match '/terms', to: 'staticpages#terms'
   
   

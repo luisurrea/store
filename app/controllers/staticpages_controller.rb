@@ -5,12 +5,6 @@ class StaticpagesController < ApplicationController
   def empresa
   end
 
-  def contacto
-  end
-
-  def sugerencias
-  end
-
   def terms
   end
 end
