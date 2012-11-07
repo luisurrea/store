@@ -1,13 +1,23 @@
 Store::Application.routes.draw do
-  get "staticpages/empresa"
+  root to: 'staticpages#home'
+  
+  match '/empresa', to: 'staticpages#empresa'
+  match '/contacto', to: 'staticpages#contacto'
+  match '/sugerencias', to: 'staticpages#sugerencias'
+  match '/terms', to: 'staticpages#terms'
+  
+  
+  
+  
+  #get "staticpages/empresa"
 
-  get "staticpages/contacto"
+  #get "staticpages/contacto"
 
-  get "staticpages/sugerencias"
+  #get "staticpages/sugerencias"
 
-  get "staticpages/terms"
+  #get "staticpages/terms"
 
-  get "staticpages/home"
+  #get "staticpages/home"
   
 
   # The priority is based upon order of creation:
