@@ -1,16 +1,28 @@
-<header>
 <div id="header">
-  <div class="navbar-inner">
-    <div class="container">
-      <%= link_to "Logo", root_path, id: "logo" %>
-      <nav>
-        <ul class="nav pull-right">
-          <li><%= link_to "Home",    root_path %></li>
+  <div id="toolbar">
+  	<div id="topleftlinks"> 
+        <ul class="left_links">
           <li><%= link_to "Empresa",    empresa_path %></li>
+          <li><%= link_to "Conozca Tramontina", '#' %></li>
+          <li><%= link_to "Medio Ambiente", '#' %></li>
           <li><%= link_to "Contacto", '#' %></li>
         </ul>
-      </nav>
-    </div>
+    <div style="position: absolute; left: 500px;">
+		<span style="font-size:smaller ;">Distribuidor:</span>
+		<%= image_tag("logo-tramontina-99x20.gif", :alt => "logotramontina") %>
+	</div>
+     </div>
   </div>
+  <!--nav content -->
+  <ul class="nav-bar">
+  	<li class="active"><%= link_to "Home",    root_path %>
+  	<li class="has-flyout"><a href="#">Productos</a></li>
+  	<li class="has-flyout"><a href="#">Mi Pedido</a></li>
+  	<li class="has-flyout"><a href="#">Registrarme</a></li>
+  </ul>
+  <!--end nav content -->
+  <div id="slider">
+  	
+  </div>
+
 </div>
-</header>

@@ -11,3 +11,70 @@
  *= require_self
  *= require_tree .
  */
+
+
+body{
+	background:url(main_bg.jpg) no-repeat center fixed ;
+}
+/*
+===========================
+	Wrapper
+===========================
+*/
+
+#wrapper {
+width:940px;
+margin:0 auto;
+}
+#header {
+width:940px;
+float:left;
+position:relative;
+z-index:50;
+}
+#toolbar{
+height:25px;
+margin: 20px 0 0;
+overflow:hidden;	
+}
+#topleftlinks{
+float:left;
+width:auto;	
+}
+.left_links {
+float:right;
+padding-top:9px;
+padding-right:0	px;
+}
+.left_links li {
+float:left;
+font-size:smaller;	
+list-style:none;
+line-height:16px;
+background:url(sep-nav-header.gif) no-repeat left 4px;
+padding:0 6px 0 8px;
+}
+.left_links li a {
+color:#aaa;
+}
+.left_links li:first-child {
+background:none;
+}
+.left_links li a:hover , .left_links li a.active{
+color:#fab300;
+}
+#slider {
+float:left;
+width:930px;
+z-index:10;
+height:367px;
+position:relative;
+}
+#footer{
+width:940px;
+height:24px;
+margin: 10px 0 0;
+overflow:hidden;
+}
+
+
