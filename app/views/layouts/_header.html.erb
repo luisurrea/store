@@ -7,11 +7,20 @@
           <li><%= link_to "Medio Ambiente", '#' %></li>
           <li><%= link_to "Contacto", '#' %></li>
         </ul>
-    <div style="position: absolute; left: 500px;">
+    	<div style="position: absolute; left: 500px;">
 		<span style="font-size:smaller ;">Distribuidor:</span>
 		<%= image_tag("logo-tramontina-99x20.gif", :alt => "logotramontina") %>
-	</div>
-     </div>
+		</div>
+    </div>
+    <div id="cartitems">
+    	( <strong>0</strong> items )
+    </div>
+    <div id="cart">
+    <%= link_to "Cart", :id => "cart" '#'  %>
+    </div>
+    <div id="logbtns">
+    	
+    </div>		
   </div>
   <!--nav content -->
   <ul class="nav-bar">
@@ -21,8 +30,10 @@
   	<li class="has-flyout"><a href="#">Registrarme</a></li>
   </ul>
   <!--end nav content -->
-  <div id="slider">
-  	
+  <div id="featured">
+  	<%= image_tag("slider1.jpg", :alt => "logotramontina") %>
+  	<%= image_tag("slider2.jpg", :alt => "logotramontina") %>
+  	<%= image_tag("slider3.jpg", :alt => "logotramontina") %>
   </div>
 
 </div>

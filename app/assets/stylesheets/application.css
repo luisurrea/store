@@ -13,7 +13,7 @@
  */
 
 
-body{
+.body{
 	background:url(main_bg.jpg) no-repeat center fixed ;
 }
 /*
@@ -62,6 +62,17 @@ background:none;
 }
 .left_links li a:hover , .left_links li a.active{
 color:#fab300;
+}
+#cartitems{
+font-size:small;
+float:right;
+padding-top:9px;
+margin-left:5px;	
+}
+#cart{
+background:url(cart.jpg)no-repeat scroll left 0 transparent;
+float:right;
+padding-top:9px;
 }
 #slider {
 float:left;
