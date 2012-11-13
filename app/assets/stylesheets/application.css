@@ -27,10 +27,9 @@ width:940px;
 margin:0 auto;
 }
 #header {
-width:940px;
-float:left;
-position:relative;
-z-index:50;
+background:none repeat scroll 0 0 ;
+margin: 0 0 10px;
+padding: 1px;
 }
 #toolbar{
 height:25px;
@@ -63,16 +62,30 @@ background:none;
 .left_links li a:hover , .left_links li a.active{
 color:#fab300;
 }
+#logotram{
+background:url(logo-tramontina-99x20.gif)no-repeat scroll right 0 transparent;
+position:absolute;
+font-size:smaller;
+margin: 6px 0 0 400px;
+padding: 5px 100px 10px 0;
+}
 #cartitems{
-font-size:small;
+font-size:smaller;
 float:right;
 padding-top:9px;
-margin-left:5px;	
+margin: 1px 5px 0 5px;
 }
 #cart{
 background:url(cart.jpg)no-repeat scroll left 0 transparent;
+font-size:smaller;
 float:right;
-padding-top:9px;
+height:20px;
+margin: 4px 0 0 25px;
+padding: 6px 0 0 30px;
+}
+#logbtns{
+font-size:smaller;
+float:right;
 }
 #slider {
 float:left;
@@ -80,6 +93,11 @@ width:930px;
 z-index:10;
 height:367px;
 position:relative;
+}
+#container{
+background:none repeat scroll 0 0 #FFFFFF;
+margin-top: 0 0 10px;
+padding: 20px 20px 4px;
 }
 #footer{
 width:940px;
