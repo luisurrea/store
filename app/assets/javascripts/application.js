@@ -14,7 +14,22 @@
 //= require jquery_ujs
 //= require foundation
 //= require_tree .
-   $(window).load(function() {
-       $("#featured").orbit();
-   });
+$(window).load(function() {
+$("#featured").orbit();
+});
 
+$(document).ready(function($) {
+    $('.tabs .subtopic').hide();
+    $('.tabs .topic a').click(function() {
+        if ($(this).hasClass('selected')) {
+            $(this).removeClass('selected');
+            $(this).parent().nextUntil('.tabs .topic').slideUp();
+        } else {
+            $('.tabs .topic a').removeClass('selected');
+            $(this).addClass('selected');
+            $('.tabs .subtopic').slideUp();
+            $(this).parent().nextUntil('.tabs .topic').slideDown();
+        }
+        return false;
+    });
+});

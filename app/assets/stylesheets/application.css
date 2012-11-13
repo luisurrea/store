@@ -95,15 +95,90 @@ height:367px;
 position:relative;
 }
 #container{
+width: 940px;
+float: left;
 background:none repeat scroll 0 0 #FFFFFF;
 margin-top: 0 0 10px;
 padding: 20px 20px 4px;
 }
+#containerleftcont{
+  width: 26%;
+  float: left;
+  overflow:hidden;
+}
+#containerrightcont{
+  width: 74%;
+  float: right;
+}
+
 #footer{
 width:940px;
 height:24px;
 margin: 10px 0 0;
 overflow:hidden;
 }
+
+
+
+
+
+
+
+a {
+outline: 0;
+text-decoration: none;
+}
+dl.tabs.vertical {
+height: auto;
+border-bottom: 1px solid #E6E6E6;
+}
+dl.tabs {
+border-bottom: solid 1px #E6E6E6;
+display: block;
+height: 40px;
+padding: 0;
+margin-bottom: 20px;
+}
+dl.tabs.vertical dd {
+border-left: 3px solid #CCC;
+}
+dl.tabs.vertical dt, dl.tabs.vertical dd {
+float: none;
+height: auto;
+}
+
+dl.tabs dd:first-child {
+margin-left: 0;
+}
+dl.tabs dd {
+display: block;
+float: left;
+padding: 0;
+margin: 0;
+}
+dl.tabs.vertical dd a {
+background: #F2F2F2;
+border: none;
+border: 1px solid #E6E6E6;
+border-width: 1px 1px 0 0;
+color: #555;
+display: block;
+font-size: 14px;
+height: auto;
+line-height: 1;
+padding: 15px 20px;
+-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+dl.tabs dd a {
+color: #6F6F6F;
+display: block;
+font-size: 14px;
+height: 40px;
+line-height: 40px;
+padding: 0 23.8px;
+}
+.subtopic {text-indent:20px; }
 
 
