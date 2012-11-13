@@ -1,0 +1,37 @@
+<h2>Contacto</h2>
+<h4>Email: contacto@empresa.com</h4>
+<%= form_for(@contactmsg)  do |form| %>
+<fieldset>
+	<% if @contactmsg.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contactmsg.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @contactmsg.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+	<div class="five columns">
+	<p>
+		<%= label_tag 'Nombre' %>
+		<%= text_field_tag :name %>
+	</p>
+	<p>
+		<%= label_tag 'Direccion de correo electronico' %>
+		<%= text_field_tag :email %>
+	</p>
+	<p>
+		<%= label_tag 'Asunto' %>
+		<%= text_field_tag :subject %>
+	</p>
+	<p>
+		<%= label_tag 'Escriba su mensaje' %>
+		<%= text_area_tag :msgbody %>
+	</p>
+	<%= submit_tag "Enviar", :class => 'button' %>
+	<br /><br />
+	</div>
+	</fieldset>
+<% end %>

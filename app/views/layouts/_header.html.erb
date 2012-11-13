@@ -5,11 +5,10 @@
           <li><%= link_to "Empresa",    empresa_path %></li>
           <li><%= link_to "Conozca Tramontina", '#' %></li>
           <li><%= link_to "Medio Ambiente", '#' %></li>
-          <li><%= link_to "Contacto", '#' %></li>
+          <li><%= link_to "Contacto", contacto_path %></li>
         </ul>
-    	<div style="position: absolute; left: 500px;">
-		<span style="font-size:smaller ;">Distribuidor:</span>
-		<%= image_tag("logo-tramontina-99x20.gif", :alt => "logotramontina") %>
+    	<div id="logotram">
+		<span >Distribuidor:</span>
 		</div>
     </div>
     <div id="cartitems">
@@ -19,7 +18,10 @@
     <%= link_to "Cart", :id => "cart" '#'  %>
     </div>
     <div id="logbtns">
-    	
+    <ul class="left_links">
+      <li><%= link_to "Login", '#' %></li>
+      <li><%= link_to "Register", '#' %></li>
+    </ul>	
     </div>		
   </div>
   <!--nav content -->

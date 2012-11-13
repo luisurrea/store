@@ -8,8 +8,8 @@ Store::Application.routes.draw do
   #match '/sugerencias', to: 'staticpages#sugerencias'
   match '/terms', to: 'staticpages#terms'
   
-  
-  
+  match '/contacto', to: 'forms_pages#new', :as => 'contactmsgs', :via => :get
+  match '/contacto', to: 'forms_pages#create', :as => 'contactmsgs', :via => :post
   
   #get "staticpages/empresa"
 
