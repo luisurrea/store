@@ -1,4 +1,6 @@
 Store::Application.routes.draw do
+  resources :products
+
   root to: 'staticpages#home'
   
   match '/empresa', to: 'staticpages#empresa'
