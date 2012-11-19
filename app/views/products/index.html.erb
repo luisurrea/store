@@ -1,12 +1,12 @@
 <div id="containerrightcont">	
-<h3>Productos</h3>
+<h4>Productos</h4>
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Image url</th>
-    <th>Price</th>
+    <th>Producto</th>
+    <th>Descripcion</th>
+    <th>Imagen</th>
+    <th>Precio</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,20 +14,19 @@
 
 <% @products.each do |product| %>
   <tr>
-    <td><%= product.title %></td>
+    <td><%= link_to product.title, product %></td>
     <td><%= product.description %></td>
-    <td><%= product.image_url %></td>
+    <td><%= image_tag(product.image_url) %></td>
     <td><%= product.price %></td>
-    <td><%= link_to 'Show', product %></td>
-   </tr>
+  </tr>
 <% end %>
 </table>
 
 <br />
 </div>
 <div id="containerleftcont">
+	<h4>Categorias</h4>
 <dl class="nice vertical tabs">
-  
   <dd class="topic"><a href="#simple1">Categoria 1</a></dd>
   <dd class="topic"><a href="#simple4">Categoria 2</a></dd>
       <dd class="subtopic"><a href="#simple5">Subcat 1</a></dd>

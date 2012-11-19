@@ -1,25 +1,37 @@
+<div id="containerrightcont">
+<h4>Descripcion del producto</h4>
 <p id="notice"><%= notice %></p>
-
 <p>
-  <b>Title:</b>
+  <b>Producto:</b>
   <%= @product.title %>
 </p>
 
 <p>
-  <b>Description:</b>
+  <b>Descripcion:</b>
   <%= @product.description %>
 </p>
 
 <p>
-  <b>Image url:</b>
+  <b>Imagen:</b>
   <%= @product.image_url %>
 </p>
 
 <p>
-  <b>Price:</b>
+  <b>Precio:</b>
   <%= @product.price %>
 </p>
-
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+ 
+<%= link_to 'Volver', products_path %>
+</div>
+<div id="containerleftcont">
+	<h4>Categorias</h4>
+<dl class="nice vertical tabs">
+  <dd class="topic"><a href="#simple1">Categoria 1</a></dd>
+  <dd class="topic"><a href="#simple4">Categoria 2</a></dd>
+      <dd class="subtopic"><a href="#simple5">Subcat 1</a></dd>
+      <dd class="subtopic"><a href="#simple6">Subcat 2</a></dd>
+  <dd class="topic"><a href="#simple7">Categoria 3</a></dd>
+      <dd class="subtopic"><a href="#simple8">Subcat 1</a></dd>
+      <dd class="subtopic"><a href="#simple9">Subcat 2</a></dd>
+</dl>
+</div>
