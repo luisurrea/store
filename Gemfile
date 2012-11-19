@@ -23,6 +23,7 @@ end
 
 gem 'jquery-rails'
 gem 'activeadmin'
+gem "heroku", "~> 2.33.1"
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
